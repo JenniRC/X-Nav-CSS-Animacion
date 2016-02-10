@@ -38,9 +38,9 @@ body{
    transform: rotate(7.5deg);
 
    /*Para la animación*/
-   animation: mymove 5s;
-   -moz-animation: mymove 5s;
-   -webkit-animation: mymove 5s;
+   animation: anim 5s;
+   -moz-animation: anim 5s;
+   -webkit-animation: anim 5s;
 }
 
 
@@ -106,19 +106,19 @@ body{
   text-align:center;
 }
 
-@keyframes mymove{
+@keyframes anim{
 0%   {opacity: 0;}
 50%  {opacity: 0.5;}
 100% {opacity: 1;}
 }
 
-@-moz-keyframes mymove{
+@-moz-keyframes anim{
 0%   {opacity: 0;}
 50%  {opacity: 0.5;}
 100% {opacity: 1;}
 }
 
-@-webkit-keyframes mymove{
+@-webkit-keyframes anim{
 0%   {opacity: 0;}
 50%  {opacity: 0.5;}
 100% {opacity: 1;}
