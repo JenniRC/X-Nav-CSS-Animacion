@@ -1,0 +1,125 @@
+body{
+  background-color:lightblue;
+}
+
+
+#sandbox{
+  font-family:"goudy-bookletter-1911-1","goudy-bookletter-1911-2","Baskerville","Georgia",serif;
+  /*Borde con alpha 0.2*/
+  border:solid 3px rgba(21,11,11,0.2);
+  margin:40px 0 0 30px;
+  padding:20px;
+  width:440px;
+  overflow:hidden;
+  z-index:2;
+  color:black;
+  font-size:16px;
+  /*Bordes redondeados*/
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  -o-border-radius:15px;
+  border-radius: 15px;
+  /*Sombra de bordes*/
+  -moz-box-shadow:0 0 20px 0 #FFF;
+  -webkit-box-shadow:0 0 20px 0 #FFF;
+  -o-box-shadow:0 0 20px 0 #FFF;
+  box-shadow:0 0 20px 0 #FFF;
+  /*Asignamos el color y el 0.6 de transparencia */
+  /*background-color:rgba(180,180,144,0.9);*/
+  /*Gradiente lineal, sentido ascendente */
+  background:-moz-linear-gradient(#444,#999);
+  background:-webkit-linear-gradient(#444,#999);
+  background:-o-linear-gradient(#444,#999);
+  background:linear-gradient(#444,#999);
+  /*Rotar 7,5 grados*/
+  -moz-transform: rotate(7.5deg);
+  -webkit-transform: rotate(7.5deg);
+  -o-transform: rotate(7.5deg);
+   transform: rotate(7.5deg);
+
+   /*Para la animación*/
+   animation: mymove 5s;
+   -moz-animation: mymove 5s;
+   -webkit-animation: mymove 5s;
+}
+
+
+
+#sandbox h1{
+  margin:0 0 20px 0;
+  font-size:56px;
+  word-spacing:2px;
+  /*Transparencia de las letras 0.6*/
+  color:rgba(0,0,0,0.6);
+/*  -moz-transition: text-align 6s,color 6s, -moz-transform 5s;
+  -webkit-transition: text-align 6s, color 6s, -webkit-transform 5s;
+  -o-transition: text-align 6s, color 6s, -o-transform 5s;
+  transition: text-align 6s, color 6s, transform 5s;*/
+}
+
+#sandbox h1 abbr{
+  cursor:help;
+  font-size:1.3em;
+  color: #ff2166;
+  /*Subrayado punteado*/
+  border-bottom: dotted 1px #333;
+  /*Sombra de las letras de la abbr*/
+  -moz-text-shadow:0 0 1px blue;
+  -webkit-text-shadow:0 0 1px blue;
+  -o-text-shadow:0 0 1px blue;
+  text-shadow:0 0 1px blue;
+}
+
+#sandbox p{
+  font-size:30px;
+  height:50px;
+  width:auto;
+  color:rgba(0,0,0,0.6);
+/*  -moz-transition: text-align 5s;
+  -webkit-transition: text-align 5s;
+  -o-transition: text-align 5s;
+  transition: text-align 5s;*/
+}
+
+#sandbox:hover{
+  /*Cambiar el tamaño del original*/
+/*  width:80%;*/
+
+  /*background: -moz-linear-gradient(darkblue,lightblue);
+  background: -webkit-linear-gradient(darkblue,lightblue);
+  background: -o-linear-gradient(blue,lightblue);
+  background: linear-gradient(blue,lightblue);*/
+
+}
+#sandbox:hover h1{
+  text-align:center;
+  color: white;
+  /*Rota 180 grados el contenido de la caja*/
+  /*
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);*/
+}
+
+#sandbox:hover p{
+  text-align:center;
+}
+
+@keyframes mymove{
+0%   {opacity: 0;}
+50%  {opacity: 0.5;}
+100% {opacity: 1;}
+}
+
+@-moz-keyframes mymove{
+0%   {opacity: 0;}
+50%  {opacity: 0.5;}
+100% {opacity: 1;}
+}
+
+@-webkit-keyframes mymove{
+0%   {opacity: 0;}
+50%  {opacity: 0.5;}
+100% {opacity: 1;}
+}
